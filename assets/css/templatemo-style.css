@@ -619,15 +619,18 @@ figure.snip1321 span {
     color: #303030;
 }
 figure.snip1321 i {
+
   position: relative!important;
   font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   background-color: #a43f49;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   display: inline-block;
   text-align: center;
-  line-height: 40px;
-  border-radius: 5px;
+  line-height: 30px;
+  border-radius: 0px;
   color: #fff;
 }
 figure.snip1321:after {
@@ -849,3 +852,59 @@ section.contact-me {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+
+
+/* Add this media query for mobile responsiveness */
+@media screen and (max-width: 845px) {
+    figure.snip1321 h4 {
+        font-size: 20px; /* Adjust the font size for mobile */
+        margin-top: 10px; /* Adjust the top margin for mobile */
+        margin-bottom: 0; /* Adjust the bottom margin for mobile */
+    }
+
+    figure.snip1321 span {
+        font-size: 11px; /* Adjust the font size for mobile */
+        margin-top: 5px; /* Adjust the top margin for mobile */
+    }
+}
+
+/* Font Stack */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Simplified Selector */
+.menu-image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Reusable Class */
+.section-padding {
+    padding: 80px 45px;
+}
+
+/* Color Variables */
+:root {
+    --main-bg-color: #a43f49;
+    --text-color: #fff;
+}
+
+/* Consistent Color Scheme */
+.menu {
+    background-color: var(--main-bg-color);
+    /* ... */
+}
+
+/* Animation Example */
+.button {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button:hover {
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
